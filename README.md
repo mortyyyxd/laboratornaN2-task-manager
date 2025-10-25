@@ -32,4 +32,4 @@
 ##  Як запустити
 1. Клонуйте репозиторій:
    ```bash
-   git clone https://github.com/your-team/task-manager.git
+   [git clone https://github.com/mortyyyxd/laboratornaN2-task-manager.git
