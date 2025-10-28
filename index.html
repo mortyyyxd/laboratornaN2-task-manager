@@ -11,3 +11,21 @@
   <script src="script.js"></script>
 </body>
 </html>
+<h1>Task Manager</h1>
+
+<div class="task-form">
+  <input type="text" id="task-input" placeholder="Введіть нову задачу...">
+  <button id="add-btn">Додати</button>
+</div>
+
+<ul id="task-list"></ul>
+document.getElementById('add-btn').addEventListener('click', () => {
+  const taskText = document.getElementById('task-input').value;
+  if (taskText.trim() === '') return;
+  
+  const li = document.createElement('li');
+  li.textContent = taskText;
+  document.getElementById('task-list').appendChild(li);
+
+  document.getElementById('task-input').value = '';
+});
